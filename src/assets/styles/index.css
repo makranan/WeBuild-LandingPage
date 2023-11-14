@@ -50,14 +50,25 @@ p {
   width: 271px;
   height: 181px;
   padding: 20px;
+  margin-bottom: 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
   flex-shrink: 0;
-  border-radius: 4px;
+  border-radius: 5px;
   background: #fff;
   box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+}
+
+.services-card_divider {
+  width: 25%;
+  height: 3px;
+  background: #e0e3eb;
+}
+
+.stats-card {
+  position: relative;
 }
 
 @media (prefers-color-scheme: light) {

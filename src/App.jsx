@@ -16,7 +16,7 @@ import {
 function App() {
   return (
     <>
-      <div id='top' className='bg-white w-full overflow-hidden'>
+      <div id='home' className='bg-white w-full overflow-hidden'>
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar />
@@ -47,7 +47,7 @@ function App() {
           </div>
         </div>
 
-        <div className={`${styles.flexCenter}`}>
+        <div className={`${styles.flexCenter} ${styles.marginY}`}>
           <div className={`${styles.boxWidth}`}>
             <Stats />
           </div>

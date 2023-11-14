@@ -1,4 +1,11 @@
-import { icon1, icon2, icon3, icon4, icon5, icon6 } from '../assets';
+import {
+  servicesIcon1,
+  servicesIcon2,
+  servicesIcon3,
+  servicesIcon4,
+  servicesIcon5,
+  servicesIcon6,
+} from '../assets';
 
 export const navLinks = [
   {
@@ -26,32 +33,32 @@ export const navLinks = [
 export const services = [
   {
     id: 'service-1',
-    icon: icon1,
+    icon: servicesIcon1,
     title: 'Construction',
   },
   {
     id: 'service-2',
-    icon: icon2,
-    title: 'Construction',
+    icon: servicesIcon2,
+    title: 'Renovation',
   },
   {
     id: 'service-3',
-    icon: icon3,
-    title: 'Construction',
+    icon: servicesIcon3,
+    title: 'Consultation',
   },
   {
     id: 'service-4',
-    icon: icon4,
-    title: 'Construction',
+    icon: servicesIcon4,
+    title: 'Repair Services',
   },
   {
     id: 'service-5',
-    icon: icon5,
-    title: 'Construction',
+    icon: servicesIcon5,
+    title: 'Architecture',
   },
   {
     id: 'service-6',
-    icon: icon6,
-    title: 'Construction',
+    icon: servicesIcon6,
+    title: 'Electric',
   },
 ];

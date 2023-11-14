@@ -1,9 +1,9 @@
 import { navLinks } from '../constants';
-import logo from '../assets/logo.svg';
+import { logo } from '../assets';
 
 const Navbar = () => {
   return (
-    <nav className='w-full flex py-6 justify-between items-center navbar max-h-[80px]'>
+    <nav className='w-full flex py-6 justify-between items-center navbar max-h-[80px] '>
       <div className='w-full flex py-6 justify-between items-center  xl:mx-[112px]'>
         <a href='#home' className='flex items-center'>
           <img src={logo} className='w-[38px] h-[47.5px]' />

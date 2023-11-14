@@ -3,7 +3,7 @@ import { hero } from '../assets';
 
 const Hero = () => {
   return (
-    <section id='home' className={`${styles.boxWidth}`}>
+    <section className={`${styles.boxWidth}`}>
       <div>
         <div className=''>
           <img src={hero} className='object-contain' />

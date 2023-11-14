@@ -8,10 +8,10 @@ const About = () => {
         <div>
           <img src={about} className='shadow-xl rounded' />
         </div>
-        <div className='w-[30%]'></div>
+        <div className='w-1/3'></div>
 
         <div className='relative ml-10'>
-          <div className='bg-[#2947A9] p-10 text-white absolute top-[30%] right-full w-[400px] md:w-[500px] lg:w-[488px] xl:w-[488px] shadow-2xl'>
+          <div className='bg-[#2947A9] p-10 text-white absolute top-[10%] right-full w-[400px] md:w-[500px] lg:w-[488px] xl:w-[488px] shadow-2xl'>
             <h3 className='text-[36px] font-700'>About Us</h3>
             <div className='my-10'>
               <p className='text-white font-400 text-[20px]'>
@@ -27,7 +27,7 @@ const About = () => {
               </p>
             </div>
             <button className='bg-white text-primary p-4 rounded mt-10'>
-              More on Our History
+              <span className='font-600 text-[18px]'>More on Our History</span>
             </button>
           </div>
         </div>
