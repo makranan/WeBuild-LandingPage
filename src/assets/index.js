@@ -1,6 +1,10 @@
 import logo from './logo.svg';
-import hero from './hero.jpeg';
+import hero1 from './hero1.jpeg';
 import about from './about.jpeg';
+import consultBg from './consultBg.jpeg';
+
+import arrowLeft from './arrowLeft.svg';
+import arrowRight from './arrowRight.svg';
 
 import facebook from './facebook.svg';
 import twitter from './twitter.svg';
@@ -28,8 +32,11 @@ import statsImg4 from './statsImg4.png';
 
 export {
   logo,
-  hero,
+  hero1,
   about,
+  consultBg,
+  arrowLeft,
+  arrowRight,
   facebook,
   twitter,
   linkedin,

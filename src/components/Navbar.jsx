@@ -14,11 +14,13 @@ const Navbar = () => {
           {navLinks.map((link, index) => (
             <li
               key={link.id}
-              className={`cursor-pointer text-[18px] ${
+              className={`cursor-pointer text-[18px] btn 
+              ${
                 index === navLinks.length - 1
                   ? 'text-orange-500 font-500'
                   : 'mr-10'
-              }`}
+              }
+              `}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>

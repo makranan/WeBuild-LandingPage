@@ -17,6 +17,7 @@ module.exports = {
         '10xl': '10rem',
       },
       fontWeight: {
+        300: 300,
         400: 400,
         500: 500,
         600: 600,

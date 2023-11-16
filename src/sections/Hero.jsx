@@ -1,13 +1,13 @@
 import styles from '../assets/styles/style.js';
-import { hero } from '../assets';
+import { hero1 } from '../assets';
+import { HeroSwitcher } from '../components';
 
 const Hero = () => {
   return (
     <section className={`${styles.boxWidth}`}>
-      <div>
-        <div className=''>
-          <img src={hero} className='object-contain' />
-        </div>
+      <div className='relative innerShadowContainer'>
+        <HeroSwitcher className='absolute bottom-0 right-0' />
+        <img src={hero1} className='object-contain' />
       </div>
     </section>
   );

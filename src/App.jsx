@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+
+import { useState, useEffect } from 'react';
 import styles from './assets/styles/style.js';
 import { Navbar, Footer } from './components';
 import {
@@ -51,6 +53,42 @@ function App() {
           <div className={`${styles.boxWidth}`}>
             <Stats />
           </div>
+        </div>
+
+        <div className={`${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Consult />
+          </div>
+        </div>
+
+        <div
+          id='projects'
+          className={`${styles.flexCenter} ${styles.paddingY}`}
+        >
+          <div className={`${styles.boxWidth}`}>
+            <Projects />
+          </div>
+        </div>
+
+        <div
+          id='contact'
+          className={`${styles.flexCenter} ${styles.paddingY} ${styles.paddingX}`}
+        >
+          <div className={`${styles.boxWidth}`}>
+            <CTA />
+          </div>
+        </div>
+
+        <div className={`${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Bottom />
+          </div>
+        </div>
+
+        <div className={`${styles.flexCenter} bg-[#2947A9] `}>
+          {/* <div className={`${styles.boxWidth}`}> */}
+          <Footer />
+          {/* </div> */}
         </div>
       </div>
     </>

@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import styles, { layout } from '../assets/styles/style';
 import { services } from '../constants';
 
@@ -23,13 +24,35 @@ const ServicesCard = ({ icon, title, index }) => {
 };
 
 const Services = () => {
-  const itemsPerRow = 3;
+  const [itemsPerRow, setItemsPerRow] = useState(getItemsPerRow);
+
+  function getItemsPerRow() {
+    if (window.innerWidth < 600) {
+      return 1; // Set 1 item per row for small screens
+    } else if (window.innerWidth < 950) {
+      return 2; // Set 2 items per row for medium screens
+    } else {
+      return 3; // Set 3 items per row for large screens
+    }
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      setItemsPerRow(getItemsPerRow());
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const rows = [];
   for (let i = 0; i < services.length; i += itemsPerRow) {
     const rowItems = services.slice(i, i + itemsPerRow);
     const row = (
-      <div key={`row-${i}`} className={`flex ${layout.sectionImg} gap-20`}>
+      <div key={`row-${i}`} className={`flex gap-8 md:gap-16 lg:gap-20`}>
         {rowItems.map((service, index) => (
           <ServicesCard key={service.id} {...service} index={i + index} />
         ))}

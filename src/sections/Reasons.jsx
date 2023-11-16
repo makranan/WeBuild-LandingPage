@@ -21,7 +21,7 @@ const CardData = [
 
 const RepCard = ({ title, description, icon }) => (
   <div className='rep-card w-[292px] h-auto'>
-    <div>{icon}</div>
+    <img src={icon} />
     <h3 className='my-4'>{title}</h3>
     <p>{description}</p>
   </div>
@@ -30,12 +30,14 @@ const RepCard = ({ title, description, icon }) => (
 const Reasons = () => {
   return (
     <section className={`${styles.flexCenter}`}>
-      <div className={`${styles.paddingY}`}>
+      <div
+        className={`flex flex-col w-full ${styles.paddingY} ${styles.paddingX}`}
+      >
         <h2 className='font-700 text-[36px] text-center mb-16'>
           Our Reputation
         </h2>
 
-        <div className='flex flex-wrap gap-10'>
+        <div className='flex flex-row justify-between flex-wrap gap-10'>
           {CardData.map((card, index) => (
             <RepCard key={index} {...card} />
           ))}
